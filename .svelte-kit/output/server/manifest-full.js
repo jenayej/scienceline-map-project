@@ -6,11 +6,11 @@ function __memo(fn) {
 
 return {
 	appDir: "_app",
-	appPath: "scienceline-map-project/_app",
+	appPath: "_app",
 	assets: new Set(["favicon.png"]),
 	mimeTypes: {".png":"image/png"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.CLS6uLsL.js","app":"_app/immutable/entry/app.DnRSifEL.js","imports":["_app/immutable/entry/start.CLS6uLsL.js","_app/immutable/chunks/entry.CjEpvGex.js","_app/immutable/chunks/scheduler.D2CNYxju.js","_app/immutable/entry/app.DnRSifEL.js","_app/immutable/chunks/scheduler.D2CNYxju.js","_app/immutable/chunks/index.Bfd7QkMT.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
+		client: {"start":"_app/immutable/entry/start.CM3bzeQX.js","app":"_app/immutable/entry/app.CQ1vrDyW.js","imports":["_app/immutable/entry/start.CM3bzeQX.js","_app/immutable/chunks/entry.CIF21COO.js","_app/immutable/chunks/scheduler.D2CNYxju.js","_app/immutable/entry/app.CQ1vrDyW.js","_app/immutable/chunks/scheduler.D2CNYxju.js","_app/immutable/chunks/index.Bfd7QkMT.js"],"stylesheets":[],"fonts":[],"uses_env_dynamic_public":false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
