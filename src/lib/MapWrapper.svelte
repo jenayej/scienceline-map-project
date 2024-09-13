@@ -30,7 +30,6 @@
     function onClick(icon) {
         selected = stories.find(d => d.id == icon.id)
         storyHighlighted = true
-        return selected
     }
 
 </script>
