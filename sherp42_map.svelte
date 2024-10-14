@@ -37,7 +37,7 @@
 	<!-- Artboard: MAP_BOUNDS -->
 {#if width && (width >= 0)}	<div id="g-sherp42_map-MAP_BOUNDS" class="g-artboard" style="">
 <div style="padding: 0 0 56.243% 0;"></div>
-		<div id="g-sherp42_map-MAP_BOUNDS-img" class="g-aiImg" alt="" style="background-image: url({ assetsPath.replace(new RegExp('/([^/.]+)$'), '/$1/') || '/' }/sherp42_map-MAP_BOUNDS.png);"></div>	</div>
+		<div id="g-sherp42_map-MAP_BOUNDS-img" class="g-aiImg" alt="" style="background-image: url({MAP_BOUNDS});"></div>	</div>
 {/if}
 </div>
 
@@ -49,6 +49,8 @@ export let onAiMounted = () => {};
 onMount(() => {
   onAiMounted();
 });
+
+import MAP_BPOUNDS from './sherp42_map-MAP_BOUNDS.png'
 
 </script>
 <!-- End ai2html - 2024-10-14 13:42 -->

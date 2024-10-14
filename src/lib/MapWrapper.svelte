@@ -1,6 +1,6 @@
 <script>
     import Ai2svelte from '$lib/Ai2svelte/index.svelte';
-    import Map from '$lib/ai/ai2html-output/map.svelte';
+    import Map from '$../../sherp42_map.svelte';
 
     import stories from './stories.json';
 
@@ -74,7 +74,9 @@
                     {storyHighlighted ? selected.headline : 'NYC Under the Surface'}
                 </a>
             </p>
-            <p class='body'>{storyHighlighted ? selected.synopsis : 'Plunge into the depths and peel back the surface hiding the city’s secrets: mussels of Newtown Creek, the National Guard stationed in subways, the beavers of Astor place — and more! Click the icons to reveal these lurking stories across New York. <br><br>A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh.'}</p>
+            <p class='body'>{storyHighlighted ? selected.synopsis : 'Plunge into the depths and peel back the surface hiding the city’s secrets: mussels of Newtown Creek, the National Guard stationed in subways, the beavers of Astor place — and more! Click the icons to reveal these lurking stories across New York. 
+
+            A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh.'}</p>
         </div>
     </div>
 </div>
