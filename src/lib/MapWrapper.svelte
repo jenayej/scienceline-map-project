@@ -1,6 +1,6 @@
 <script>
     import Ai2svelte from '$lib/Ai2svelte/index.svelte';
-    import Map from '$lib/ai/ai2html-output/map.svelte';
+    import Map from '$../../sherp42_map.svelte';
 
     import stories from './stories.json';
 
@@ -70,10 +70,12 @@
                     href={storyHighlighted ? selected.link : ''} 
                     target={storyHighlighted ? '_blank' : '_self'}
                 >
-                    {storyHighlighted ? selected.headline : 'This is where your headline will go'}
+                    {storyHighlighted ? selected.headline : 'NYC Under the Surface'}
                 </a>
             </p>
-            <p class='body'>{storyHighlighted ? selected.synopsis : 'This is some body text. There will be copy here that describes each story.'}</p>
+            <p class='body'>{storyHighlighted ? selected.synopsis : 'Plunge into the depths and peel back the surface hiding the city’s secrets: mussels of Newtown Creek, the National Guard stationed in subways, the beavers of Astor place — and more! Click the icons to reveal these lurking stories across New York. 
+
+            A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh.'}</p>
         </div>
     </div>
 </div>
@@ -81,7 +83,7 @@
 
 <style>
     .hed {
-        font-size: 22px;
+        font-size: 32px;
         font-weight: 700;
         color: white;
         margin-bottom: 40px;
@@ -91,7 +93,7 @@
         text-decoration: none;
     }
     .body {
-        font-size: 16px;
+        font-size: 22px;
         height: calc(100% - 80px);
         color: white;
     }
