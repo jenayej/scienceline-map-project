@@ -50,7 +50,7 @@ onMount(() => {
   onAiMounted();
 });
 
-import MAP_BPOUNDS from './sherp42_map-MAP_BOUNDS.png'
+import MAP_BOUNDS from './sherp42_map-MAP_BOUNDS.png'
 
 </script>
 <!-- End ai2html - 2024-10-14 13:42 -->
