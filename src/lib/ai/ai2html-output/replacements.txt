@@ -1,9 +1,0 @@
-add to script tag
-
-import map900 from './map-900.jpg'
-import map1300 from './map-1300.jpg'
-import map2667 from './map-2667.jpg'
-
-
-replace background image urls so they look like this:
-style="background-image: url({map900});"
