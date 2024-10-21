@@ -3,6 +3,7 @@
     import Map from '$lib/ai/sherp42_map.svelte';
 
     import stories from './stories.json';
+    import beaver from '../illos_vf/beaver.png'
 
     import {onMount} from 'svelte';
 
@@ -49,18 +50,20 @@
             style:width='{mapWidth}px'
             style:height='{mapHeight}px'
         >
-            {#if mounted && icons.length > 0}
-                {#each icons as icon}
+            {#if mounted && stories.length > 0}
+                {#each stories as icon}
                     <!-- svelte-ignore a11y-click-events-have-key-events -->
                     <!-- svelte-ignore a11y-no-static-element-interactions -->
-                    <div
-                        class='icon'
-                        style:top={icon.top}
-                        style:left={icon.left}
-                        on:click={() => onClick(icon)}
+                    <div class='image-wrapper'
+                        style:top='{icon.top}%'
+                        style:left='{icon.left}%'
+                        on:click={() => onClick.bind(icon)}
                     >
-                        <p>{icon.id}</p>
+                        <img
+                            src="../illos_vf/{icon.imagename}.png"
+                        >
                     </div>
+                    
                 {/each}
             {/if}
         </div>
@@ -73,15 +76,18 @@
                     {storyHighlighted ? selected.headline : 'NYC Under the Surface'}
                 </a>
             </p>
-            <p class='body'>{storyHighlighted ? selected.synopsis : `Plunge into the depths and peel back the surface hiding the city’s secrets: mussels of Newtown Creek, the National Guard stationed in subways, the beavers of Astor place — and more! Click the icons to reveal these lurking stories across New York. 
-
-            A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh.`}</p>
+            <p class='body'>{@html storyHighlighted ? selected.synopsis : `Plunge into the depths and peel back the surface hiding the city’s secrets: mussels of Newtown Creek, the National Guard stationed in subways, the beavers of Astor place — and more! Click the icons to reveal these lurking stories across New York.<br><br>A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh.`}</p>
         </div>
     </div>
 </div>
 
 
 <style>
+    .image-wrapper {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+    }
     .hed {
         font-size: 32px;
         font-weight: 700;

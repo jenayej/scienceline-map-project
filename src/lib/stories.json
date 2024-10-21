@@ -3,6 +3,9 @@
     "id": "",
     "headline": "Winemaking",
     "writer": "Alexa Robles-Gil",
+    "imagename": "beaver",
+    "top": 50,
+    "left": 50,
     "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "link": "https://scienceline.org/"
   },
@@ -10,6 +13,9 @@
     "id": "",
     "headline": "Mammoth Bones",
     "writer": "Alexa Robles-Gil",
+    "imagename": "winery",
+    "top": 50,
+    "left": 50,
     "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "link": "https://scienceline.org/"
   },
@@ -17,6 +23,9 @@
     "id": 2,
     "headline": "Astor Place Beavers",
     "writer": "Sara Hashemi",
+    "imagename": "winery",
+    "top": 50,
+    "left": 50,
     "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "link": "https://scienceline.org/"
   },
@@ -24,6 +33,9 @@
     "id": 6,
     "headline": "Underground Nuclear Bunker",
     "writer": "Kohava Mendelsohn",
+    "imagename": "winery",
+    "top": 50,
+    "left": 50,
     "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "link": "https://scienceline.org/"
   },
@@ -31,6 +43,9 @@
     "id": 4,
     "headline": "National Guard in the Subway",
     "writer": "Kohava Mendelsohn",
+    "imagename": "winery",
+    "top": 50,
+    "left": 50,
     "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "link": "https://scienceline.org/"
   },
@@ -38,6 +53,9 @@
     "id": 5,
     "headline": "Newtown Creek Video",
     "writer": "Dawn Attride",
+    "imagename": "winery",
+    "top": 50,
+    "left": 50,
     "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "link": "https://scienceline.org/"
   },
@@ -45,6 +63,9 @@
     "id": 1,
     "headline": "Silence",
     "writer": "Dawn Attride",
+    "imagename": "winery",
+    "top": 50,
+    "left": 50,
     "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "link": "https://scienceline.org/"
   },
@@ -52,6 +73,9 @@
     "id": 3,
     "headline": "NYC Insulation",
     "writer": "Avery Orrall",
+    "imagename": "winery",
+    "top": 50,
+    "left": 50,
     "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "link": "https://scienceline.org/"
   },
@@ -59,6 +83,9 @@
     "id": 7,
     "headline": "Soilbank",
     "writer": "Carrie Klein",
+    "imagename": "winery",
+    "top": 50,
+    "left": 50,
     "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "link": "https://scienceline.org/"
   },
@@ -66,6 +93,9 @@
     "id": 8,
     "headline": "RATS",
     "writer": "Carrie Klein",
+    "imagename": "winery",
+    "top": 50,
+    "left": 50,
     "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "link": "https://scienceline.org/"
   },
@@ -73,6 +103,9 @@
     "id": "",
     "headline": "Federal Reserve Gold",
     "writer": "Humberto Basilio",
+    "imagename": "winery",
+    "top": 50,
+    "left": 50,
     "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "link": ""
   }
