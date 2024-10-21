@@ -54,11 +54,11 @@
     ]
   },
   "src/illos_vf/beaver.png": {
-    "file": "_app/immutable/assets/beaver.YYwQ5cQd.png",
+    "file": "app/immutable/assets/beaver.YYwQ5cQd.png",
     "src": "src/illos_vf/beaver.png"
   },
   "src/lib/ai/sherp42_map-MAP_BOUNDS.png": {
-    "file": "_app/immutable/assets/sherp42_map-MAP_BOUNDS.DYI4pNDr.png",
+    "file": "app/immutable/assets/sherp42_map-MAP_BOUNDS.DYI4pNDr.png",
     "src": "src/lib/ai/sherp42_map-MAP_BOUNDS.png"
   },
   "src/routes/+layout.js": {
@@ -76,7 +76,7 @@
       "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.B0m3gmAa.css"
+      "app/immutable/assets/_page.B0m3gmAa.css"
     ]
   }
 }
