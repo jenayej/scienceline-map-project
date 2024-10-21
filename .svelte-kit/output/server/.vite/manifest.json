@@ -53,6 +53,10 @@
       "_ssr.js"
     ]
   },
+  "src/illos_vf/beaver.png": {
+    "file": "_app/immutable/assets/beaver.YYwQ5cQd.png",
+    "src": "src/illos_vf/beaver.png"
+  },
   "src/lib/ai/sherp42_map-MAP_BOUNDS.png": {
     "file": "_app/immutable/assets/sherp42_map-MAP_BOUNDS.DYI4pNDr.png",
     "src": "src/lib/ai/sherp42_map-MAP_BOUNDS.png"
@@ -66,7 +70,7 @@
       "_ssr.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.D7btXiCD.css"
+      "_app/immutable/assets/_page.B0m3gmAa.css"
     ]
   }
 }
