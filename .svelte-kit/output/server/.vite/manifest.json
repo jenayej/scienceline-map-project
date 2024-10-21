@@ -61,6 +61,12 @@
     "file": "_app/immutable/assets/sherp42_map-MAP_BOUNDS.DYI4pNDr.png",
     "src": "src/lib/ai/sherp42_map-MAP_BOUNDS.png"
   },
+  "src/routes/+layout.js": {
+    "file": "entries/pages/_layout.js",
+    "name": "entries/pages/_layout",
+    "src": "src/routes/+layout.js",
+    "isEntry": true
+  },
   "src/routes/+page.svelte": {
     "file": "entries/pages/_page.svelte.js",
     "name": "entries/pages/_page.svelte",
