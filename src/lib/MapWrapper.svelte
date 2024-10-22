@@ -1,15 +1,17 @@
 <script>
+// @ts-nocheck
     import Ai2svelte from '$lib/Ai2svelte/index.svelte';
     import Map from '$lib/ai/sherp42_map.svelte';
 
     import stories from './stories.json';
-    import beaver from '../illos_vf/beaver.png'
-
     import {onMount} from 'svelte';
 
-    let hiddenIcons, 
-        icons = [], 
-        mounted = false,
+    // import all of the images from the illos_vf folder
+    const images = import.meta.glob('$lib/illos_vf/*.png', {
+        eager: true
+    })
+
+    let mounted = false,
         mapWidth,
         mapHeight,
         selected,
@@ -19,19 +21,13 @@
         mounted = true
     })
 
-    $: if (mounted) {
-        hiddenIcons = document.getElementsByClassName('g-icons')
-        for (let i = 0; i < hiddenIcons.length; i++) {
-            const element = hiddenIcons[i];
-            let newElem = {id: element.firstChild.innerHTML, top: element.style.top, left: element.style.left}
-            icons.push(newElem)
-        }
-    }
 
-    function onClick(icon) {
-        selected = stories.find(d => d.id == icon.id)
+    // when someone clicks on an icon, find the item in the stories array/json file and return it
+    function onClick(story) {
+        selected = stories.find(d => d.id == story.id)
         storyHighlighted = true
     }
+
 
 </script>
 
@@ -51,20 +47,25 @@
             style:height='{mapHeight}px'
         >
             {#if mounted && stories.length > 0}
-                {#each stories as icon}
+                {#each stories as story}
                     <!-- svelte-ignore a11y-click-events-have-key-events -->
                     <!-- svelte-ignore a11y-no-static-element-interactions -->
-                    <div class='image-wrapper'
-                        style:top='{icon.top}%'
-                        style:left='{icon.left}%'
-                        on:click={() => onClick.bind(icon)}
+                    <div class='icon-wrapper'
+                        style:top='{story.top}%'
+                        style:left='{story.left}%'
+                        on:click={() => onClick(story)}
                     >
-                        <img
-                            src="../illos_vf/{icon.imagename}.png"
-                        >
+                    <p>{story.headline}</p>
+                    <!-- the each loop below is just a weird workaround to load the images dynamically -->
+                    {#each Object.entries(images).filter(d => d[0] == `/src/lib/illos_vf/${story.imagename}.png`) as [_path, module]}
+                        <div class='image-wrapper'>
+                            <img src={module.default} />
+                        </div>
+                    {/each}
                     </div>
                     
                 {/each}
+                
             {/if}
         </div>
         <div id='sidebar'>
@@ -83,10 +84,23 @@
 
 
 <style>
-    .image-wrapper {
+    .icon-wrapper {
         position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .image-wrapper {
+        width: 100%;
+        height: 100%;
         width: 100px;
         height: 100px;
+    }
+    .image-wrapper img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
     }
     .hed {
         font-size: 32px;
@@ -115,49 +129,19 @@
         left: 20px;
         font-family: Arial, Helvetica, sans-serif;
     }
-    .icon {
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        border: 2px black solid;
-        background-color: white;
-    }
-
-    .icon p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        font-weight: 700;
-        color: black;
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        text-align: center;
-        margin: 0;
-        transform: translate(-2px, 2px);
-    }
-
     #map-annotations {
         position: absolute;
         top: 0;
         left: 0;
     }
-
     #visuals-wrapper {
         position: relative;
     }
-
-    #wrapper :global(.g-icons) {
-        opacity: 0;
-    }
-
     #wrapper {
         width: 100dvw;
         height: 100dvh;
         background-color: black;
-        /* padding-top: 100px; */
     }
-
     div {
         box-sizing: border-box;
     }
