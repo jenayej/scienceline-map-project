@@ -55,7 +55,7 @@
                         style:left='{story.left}%'
                         on:click={() => onClick(story)}
                     >
-                    <p>{story.headline}</p>
+                    
                     <!-- the each loop below is just a weird workaround to load the images dynamically -->
                     {#each Object.entries(images).filter(d => d[0] == `/src/lib/illos_vf/${story.imagename}.png`) as [_path, module]}
                         <div class='image-wrapper'>
@@ -119,7 +119,7 @@
     }
     #sidebar {
         position: fixed;
-        width: 350px;
+        width: 375px;
         height: calc(100% - 40px);
         /* min-width: 400px; */
         /* max-width: 500px; */
