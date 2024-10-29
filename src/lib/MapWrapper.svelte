@@ -4,6 +4,7 @@
     import Map from '$lib/ai/sherp42_map.svelte';
 
     import stories from './stories.json';
+    import writers from './stories.json';
     import {onMount} from 'svelte';
 
     // import all of the images from the illos_vf folder
@@ -77,6 +78,7 @@
                     {storyHighlighted ? selected.headline : 'NYC Under the Surface'}
                 </a>
             </p>
+
             <p class='body'>{@html storyHighlighted ? selected.synopsis : `Plunge into the depths and peel back the surface hiding the city’s secrets: mussels of Newtown Creek, the National Guard stationed in subways, the beavers of Astor place — and more! Click the icons to reveal these lurking stories across New York.<br><br>A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh.`}</p>
         </div>
     </div>
@@ -84,6 +86,20 @@
 
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+    .yantramanav-regular {
+      font-family: "Yantramanav", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .montserrat-thin {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+    }
+
     .icon-wrapper {
         position: absolute;
         font-family: Arial, Helvetica, sans-serif;
@@ -103,31 +119,39 @@
         height: 100%;
     }
     .hed {
-        font-size: 32px;
+        font-family: "Yantramanav", sans-serif;
+        font-size: 38px;
         font-weight: 700;
         color: white;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
     .hed a {
         color: white;
         text-decoration: none;
     }
+    .h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        height: calc(100% - 80px);
+        color: white;
+    }
     .body {
+        font-family: "Montserrat", sans-serif;
         font-size: 22px;
         height: calc(100% - 80px);
         color: white;
     }
     #sidebar {
         position: fixed;
-        width: 375px;
+        width: 385px;
         height: calc(100% - 40px);
         /* min-width: 400px; */
         /* max-width: 500px; */
-        background-color: black;
-        padding: 40px;
+        background-color: #171717;
+        padding-left: 35px;
+        padding-right: 35px;
         top: 20px;
         left: 20px;
-        font-family: Arial, Helvetica, sans-serif;
     }
     #map-annotations {
         position: absolute;
