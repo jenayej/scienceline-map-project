@@ -96,8 +96,6 @@
                 </a>
             </p>
 
-            <p class='byline'>
-                <
 
             <p class='body'>{@html storyHighlighted ? selected.synopsis : `Plunge into the depths and peel back the surface hiding the city’s secrets: mussels of Newtown Creek, the National Guard stationed in subways, the beavers of Astor place — and more! Click the icons to reveal these lurking stories across New York.<br><br>A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh.`}</p>
         </div>
