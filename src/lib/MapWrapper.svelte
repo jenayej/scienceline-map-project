@@ -30,6 +30,14 @@
     }
 
 
+    // trying to enlarge the images when clicked
+    function enlargeImg() {
+        // Set image size to 1.5 times original
+        img.style.transform = "scale(1.5)";
+        // Animation effect
+        img.style.transition = "transform 0.25s ease";
+    }
+
 </script>
 
 <div id='wrapper'>
@@ -129,7 +137,7 @@
         color: white;
         text-decoration: none;
     }
-    .h2 {
+    .byline {
         font-family: "Montserrat", sans-serif;
         font-size: 18px;
         height: calc(100% - 80px);
@@ -137,19 +145,19 @@
     }
     .body {
         font-family: "Montserrat", sans-serif;
-        font-size: 22px;
+        font-size: 21px;
         height: calc(100% - 80px);
         color: white;
     }
     #sidebar {
         position: fixed;
-        width: 385px;
+        width: 375px;
         height: calc(100% - 40px);
         /* min-width: 400px; */
         /* max-width: 500px; */
         background-color: #171717;
-        padding-left: 35px;
-        padding-right: 35px;
+        padding-left: 30px;
+        padding-right: 30px;
         top: 20px;
         left: 20px;
     }
