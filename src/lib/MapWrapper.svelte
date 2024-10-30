@@ -12,6 +12,8 @@
         eager: true
     })
 
+    const boilerplate = "Plunge into the depths and peel back the surface hiding the city’s secrets: mussels of Newtown Creek, the National Guard stationed in subways, the beavers of Astor place — and more! Click the icons to reveal these lurking stories across New York.<br><br>A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh."
+
     let mounted = false,
         mapWidth,
         mapHeight,
@@ -86,8 +88,8 @@
                     {storyHighlighted ? selected.headline : 'NYC Under the Surface'}
                 </a>
             </p>
-
-            <p class='body'>{@html storyHighlighted ? selected.synopsis : `Plunge into the depths and peel back the surface hiding the city’s secrets: mussels of Newtown Creek, the National Guard stationed in subways, the beavers of Astor place — and more! Click the icons to reveal these lurking stories across New York.<br><br>A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh.`}</p>
+            <p class='byline'>{storyHighlighted ? selected.writer : ''}</p>
+            <p class='body'>{@html storyHighlighted ? selected.synopsis : boilerplate}</p>
         </div>
     </div>
 </div>
@@ -116,10 +118,25 @@
         text-align: center;
     }
     .image-wrapper {
-        width: 100%;
-        height: 100%;
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
+        transition: all 1s;
+        cursor: pointer;
+    }
+    @media (min-width: 800px) {
+        .image-wrapper {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    @media (min-width: 1000px) {
+        .image-wrapper {
+            width: 120px;
+            height: 120px;
+        }
+    }
+    .image-wrapper:hover {
+        transform: scale(1.2) rotate(15deg);
     }
     .image-wrapper img {
         object-fit: contain;
@@ -140,7 +157,7 @@
     .byline {
         font-family: "Montserrat", sans-serif;
         font-size: 18px;
-        height: calc(100% - 80px);
+        /* height: calc(100% - 80px); */
         color: white;
     }
     .body {
