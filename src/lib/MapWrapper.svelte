@@ -4,7 +4,7 @@
     import Map from '$lib/ai/sherp42_map.svelte';
 
     import stories from './stories.json';
-    import writers from './stories.json';
+    // import writers from './stories.json';
     import {onMount} from 'svelte';
 
     // import all of the images from the illos_vf folder
@@ -30,13 +30,22 @@
     }
 
 
-    // trying to enlarge the images when clicked
-    function enlargeImg() {
+    // trying to enlarge the icons when clicked
+    function enlargeImg(story) {
         // Set image size to 1.5 times original
-        img.style.transform = "scale(1.5)";
+        story.style.transform = "scale(1.5)";
         // Animation effect
-        img.style.transition = "transform 0.25s ease";
+        story.style.transition = "transform 0.25s ease";
     }
+
+    // function to reset icon size
+    function resetImg(story) {
+        // Set image size to original
+        story.style.transform = "scale(1)";
+        story.style.transition = "transform 0.25s ease";
+    }
+
+
 
 </script>
 
@@ -86,6 +95,9 @@
                     {storyHighlighted ? selected.headline : 'NYC Under the Surface'}
                 </a>
             </p>
+
+            <p class='byline'>
+                <
 
             <p class='body'>{@html storyHighlighted ? selected.synopsis : `Plunge into the depths and peel back the surface hiding the city’s secrets: mussels of Newtown Creek, the National Guard stationed in subways, the beavers of Astor place — and more! Click the icons to reveal these lurking stories across New York.<br><br>A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh.`}</p>
         </div>
