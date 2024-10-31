@@ -4,7 +4,6 @@
     import Map from '$lib/ai/sherp42_map.svelte';
 
     import stories from './stories.json';
-    import writers from './stories.json';
     import {onMount} from 'svelte';
 
     // import all of the images from the illos_vf folder
@@ -136,7 +135,7 @@
         }
     }
     .image-wrapper:hover {
-        transform: scale(1.2) rotate(15deg);
+        transform: scale(1.32) rotate(15deg);
     }
     .image-wrapper img {
         object-fit: contain;
@@ -148,7 +147,7 @@
         font-size: 38px;
         font-weight: 700;
         color: white;
-        margin-bottom: 25px;
+        margin-bottom: 0px;
     }
     .hed a {
         color: white;
@@ -156,7 +155,7 @@
     }
     .byline {
         font-family: "Montserrat", sans-serif;
-        font-size: 18px;
+        font-size: 18.5px;
         /* height: calc(100% - 80px); */
         color: white;
     }
