@@ -11,7 +11,7 @@
         eager: true
     })
 
-    const boilerplate = "Plunge into the depths and peel back the surface hiding the city’s secrets: mussels of Newtown Creek, the National Guard stationed in subways, the beavers of Astor place — and more! Click the icons to reveal these lurking stories across New York.<br><br>A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh."
+    const boilerplate = "Plunge into the depths and peel back the surface hiding the city’s secrets: mussels of Newtown Creek, the National Guard stationed in subways, the beavers of Astor Place — and more! Click the icons to reveal these lurking stories across New York.<br><br>A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh."
 
     let mounted = false,
         mapWidth,
@@ -97,7 +97,7 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
 
-    .yantramanav-regular {
+    .yantramanav-light {
       font-family: "Yantramanav", sans-serif;
       font-weight: 400;
       font-style: normal;
@@ -161,7 +161,7 @@
     }
     .body {
         font-family: "Montserrat", sans-serif;
-        font-size: 21px;
+        font-size: 18px;
         height: calc(100% - 80px);
         color: white;
     }
