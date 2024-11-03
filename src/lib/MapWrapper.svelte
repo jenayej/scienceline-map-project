@@ -11,7 +11,7 @@
         eager: true
     })
 
-    const boilerplate = "Plunge into the depths and peel back the surface hiding the city’s secrets: mussels of Newtown Creek, the National Guard stationed in subways, the beavers of Astor Place — and more!<br><br>Click the icons to reveal these lurking stories across New York.<br><br><font size ="15 px">A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh.</font>"
+    const boilerplate = "Plunge into the depths and peel back the surface hiding the city’s secrets: mussels of Newtown Creek, the National Guard stationed in subways, the beavers of Astor Place — and more!<br><br>Click the icons to reveal these lurking stories across New York.<br><br><font size ="15 px"><i>A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh.</i></font>"
 
     let mounted = false,
         mapWidth,
