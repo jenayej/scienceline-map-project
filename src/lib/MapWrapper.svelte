@@ -81,6 +81,15 @@
             </p>
             <p class='byline'>{storyHighlighted ? selected.writer : ''}</p>
             <p class='body'>{@html storyHighlighted ? selected.synopsis : boilerplate}</p>
+            <p class='returnhome'>
+                <a 
+                    href={storyHighlighted ? selected.homepagelink : ''} 
+                    target='_self'
+                >
+                    {storyHighlighted ? selected.homepagetext : ''}
+                </a></p>
+
+            <!-- <p class='returnhome'>{@html storyHighlighted ? selected.homepagelink : homelink}</p>  -->
         </div>
     </div>
 </div>
@@ -91,7 +100,7 @@
 
     .yantramanav {
       font-family: "Yantramanav", sans-serif;
-      font-weight: 400;
+      font-weight: 300;
       font-style: normal;
     }
     .montserrat-thin {
@@ -101,6 +110,40 @@
       font-style: normal;
     }
 
+    .hed {
+        font-family: "Yantramanav", sans-serif;
+        font-size: 36px;
+        font-weight: 500;
+        color: white;
+        margin-bottom: 0px;
+    }
+    .hed a {
+        color: white;
+        text-decoration: none;
+    }
+    .byline {
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        color: white;
+        margin-bottom: 35px;
+    }
+    .body {
+        font-family: "Montserrat", sans-serif;
+        font-size: 17px;
+        /*height: calc(100% - 80px);*/
+        color: white;
+        margin-bottom: 35px;
+    }
+    .returnhome {
+        font-family: "Montserrat", sans-serif;
+        font-size: 19px;
+        /*height: calc(100% - 80px);*/
+        color: white;
+    }
+    .returnhome a {
+        color: white;
+        text-decoration: none;
+    }
     .icon-wrapper {
         position: absolute;
         font-family: Arial, Helvetica, sans-serif;
@@ -114,16 +157,64 @@
         transition: all 1s;
         cursor: pointer;
     }
+    @media (max-width: 799px) {
+        .image-wrapper {
+            width: 100px;
+            height: 100px;
+        }
+        .hed {
+            font-size: 25px;
+        }
+        .body {
+            font-size: 13px;
+        }
+        .returnhome {
+            font-size: 15px;
+        }
+    }
     @media (min-width: 800px) {
         .image-wrapper {
             width: 100px;
             height: 100px;
         }
+        .hed {
+            font-size: 25px;
+        }
+        .body {
+            font-size: 15px;
+        }
+        .returnhome {
+            font-size: 17px;
+        }
     }
-    @media (min-width: 1000px) {
+    @media (min-width: 1200px) {
         .image-wrapper {
             width: 120px;
             height: 120px;
+        }
+        .hed {
+            font-size: 36px;
+        }
+        .body {
+            font-size: 19px;
+        }
+        .returnhome {
+            font-size: 21px;
+        }
+    }
+        @media (min-width: 1700px) {
+        .image-wrapper {
+            width: 120px;
+            height: 120px;
+        }
+        .hed {
+            font-size: 36px;
+        }
+        .body {
+            font-size: 21px;
+        }
+        .returnhome {
+            font-size: 23px;
         }
     }
     .image-wrapper:hover {
@@ -134,29 +225,7 @@
         width: 100%;
         height: 100%;
     }
-    .hed {
-        font-family: "Yantramanav", sans-serif;
-        font-size: 38px;
-        font-weight: 500;
-        color: white;
-        margin-bottom: 0px;
-    }
-    .hed a {
-        color: white;
-        text-decoration: none;
-    }
-    .byline {
-        font-family: "Montserrat", sans-serif;
-        font-size: 18px;
-        color: white;
-        margin-bottom: 35px;
-    }
-    .body {
-        font-family: "Montserrat", sans-serif;
-        font-size: 19px;
-        /*height: calc(100% - 80px);*/
-        color: white;
-    }
+
     #sidebar {
         position: fixed;
         width: 375px;
