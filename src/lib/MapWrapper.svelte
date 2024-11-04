@@ -11,7 +11,7 @@
         eager: true
     })
 
-    const boilerplate = "Plunge into the depths and peel back the surface hiding the city’s secrets: mussels of Newtown Creek, the National Guard stationed in subways, the beavers of Astor Place — and more!<br><br>Click the icons to reveal these lurking stories across New York.<br><br><font size ="15 px"><i>A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh.</i></font>"
+    const boilerplate = "Plunge into the depths and peel back the surface hiding the city’s secrets: mussels of Newtown Creek, the National Guard stationed in subways, the beavers of Astor Place — and more! Click the icons to reveal these lurking stories across New York.<br><br><i>A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh</i>."
 
     let mounted = false,
         mapWidth,
@@ -30,14 +30,6 @@
         storyHighlighted = true
     }
 
-
-    // trying to enlarge the images when clicked
-    function enlargeImg() {
-        // Set image size to 1.5 times original
-        img.style.transform = "scale(1.5)";
-        // Animation effect
-        img.style.transition = "transform 0.25s ease";
-    }
 
 </script>
 
@@ -99,7 +91,7 @@
 
     .yantramanav {
       font-family: "Yantramanav", sans-serif;
-      font-weight: 100;
+      font-weight: 400;
       font-style: normal;
     }
     .montserrat-thin {
@@ -145,7 +137,7 @@
     .hed {
         font-family: "Yantramanav", sans-serif;
         font-size: 38px;
-        font-weight: 300;
+        font-weight: 500;
         color: white;
         margin-bottom: 0px;
     }
@@ -156,13 +148,13 @@
     .byline {
         font-family: "Montserrat", sans-serif;
         font-size: 18px;
-        /* height: calc(100% - 80px); */
         color: white;
+        margin-bottom: 35px;
     }
     .body {
         font-family: "Montserrat", sans-serif;
-        font-size: 15px;
-        height: calc(100% - 80px);
+        font-size: 19px;
+        /*height: calc(100% - 80px);*/
         color: white;
     }
     #sidebar {
