@@ -11,7 +11,7 @@
         eager: true
     })
 
-    const boilerplate = "Plunge into the depths and peel back the surface hiding the city’s secrets: mussels of Newtown Creek, the National Guard stationed in subways, the beavers of Astor Place — and more! <br><br>Click the icons to reveal these lurking stories across New York. <br><br><br><font size=\"3\"><i>A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh</i></font>."
+    const boilerplate = "Plunge into the depths of New York and peel back the surface hiding its secrets. Explore mussels of Newtown Creek, the National Guard stationed in subways, beavers of Astor Place — and more! <br><br>Click the icons to reveal these lurking stories across New York. <br><br><br><font size=\"3\"><i>A project by New York University’s Science, Health and Environmental Reporting Program, with help from Sara Chodosh</i></font>."
 
     let mounted = false,
         mapWidth,
@@ -181,40 +181,63 @@
             font-size: 25px;
         }
         .body {
-            font-size: 15px;
+            font-size: 16px;
         }
         .returnhome {
-            font-size: 17px;
+            font-size: 18px;
         }
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1300px) {
         .image-wrapper {
-            width: 120px;
-            height: 120px;
+            width: 110px;
+            height: 110px;
         }
         .hed {
             font-size: 36px;
         }
         .body {
-            font-size: 19px;
+            font-size: 18px;
         }
         .returnhome {
-            font-size: 21px;
+            font-size: 20px;
         }
     }
-        @media (min-width: 1700px) {
+        @media (min-width: 1900px) {
         .image-wrapper {
-            width: 120px;
-            height: 120px;
+            width: 130px;
+            height: 130px;
         }
         .hed {
             font-size: 36px;
         }
+        .byline {
+            font-size: 18px;
+        }
+
         .body {
             font-size: 21px;
         }
         .returnhome {
             font-size: 23px;
+        }
+    }
+        @media (min-width: 2500px) {
+        .image-wrapper {
+            width: 150px;
+            height: 150px;
+        }
+        .hed {
+            font-size: 38px;
+        }
+        .byline {
+            font-size: 20px;
+        }
+
+        .body {
+            font-size: 23px;
+        }
+        .returnhome {
+            font-size: 27px;
         }
     }
     .image-wrapper:hover {
